@@ -3,7 +3,7 @@ const { json } = require("express");
 
 // sets CORS headers to allow browser requests from the client origin
 const corsMiddleware = (req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", *);
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
   if (req.method === "OPTIONS") {
     res.setHeader(
